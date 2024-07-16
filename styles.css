@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-family: norsebold;
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+    top: 25vh;
+    background-color: rgba(0, 4, 29, 0.639);
+    color: white;
+}
+
+h1 img {
+    height: 6rem;
+    width: auto;
+    position: relative;
+    top: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+}
+
+p {
+    margin-bottom: 0;
+}
+
+button {
+    font: inherit;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+    background-color: rgb(78, 141, 195);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(78, 141, 195);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form div {
+    margin: 5px 5px 5px 0px;
+    width: 45%;
+}
+
+input {
+    appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 0.1rem solid rgb(220, 220, 220);
+    border-radius: 0.2rem;
+}
+
+input:valid {
+    border-color: green;
+    background-color: rgb(240, 255, 240);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:required::after {
+    content: "*";
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(78, 141, 195);
+    box-shadow: 0.1rem 0.1rem 0.3rem rgb(61, 61, 61);
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+    letter-spacing: 0.1rem;
+}
+
+input, label {
+    display: block;
+}
+
+.left {
+    height: 100%;
+    width: 35%;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right > div {
+    box-sizing: border-box;
+}
+
+.right-top {
+    flex: 0 1 35%;
+    padding: 5% 20% 5% 5%;
+    vertical-align: bottom;
+    display: flex;
+}
+
+.right-top div {
+    align-self: end;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.right-middle {
+
+    position: relative;
+    z-index: 2;
+    padding: 2% 20% 2% 5%;
+    box-shadow: 0 0.3rem 1rem rgb(61, 61, 61);
+}
+
+.right-bottom {
+    flex-grow: 1;
+    padding: 3% 20% 2% 5%;
+}
+
+.right-top,
+.right-bottom {
+    background-color: rgb(254, 249, 241);
+}
